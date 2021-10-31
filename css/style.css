@@ -1,0 +1,132 @@
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+    :root 
+    {
+        --header-height:3rem;
+        --font-family:'Open Sans', sans-serif;
+        --gray-color:#f8f9fa;
+        --color-profile:#c2185b;
+    }
+
+    *{margin:0px;padding:0px;box-sizing:border-box;}
+    ::before,::after{box-sizing:border-box;}
+    ol,ul{list-style-type:none;font-size:0.9rem;}
+    a{text-decoration:none;color:black;}
+
+
+    body
+    {
+        margin-top:var(--header-height);
+    }
+
+    .grid 
+    {
+        width:calc(100% - 2rem);
+        margin-left:1rem;
+        margin-right:1rem;
+    }
+
+    .l-header
+    {
+        position: fixed;
+        top:0px;
+        left:0px;
+        width:100%;
+
+    }
+
+    /* Nav  */
+    .nav 
+    {
+        display:flex;
+        justify-content:end;
+        margin-top:1rem;
+        align-items:center;
+    }
+
+
+    .nav__list 
+    {
+        display:flex;
+    }
+
+    .nav__item 
+    {
+        margin-right:1rem;
+    }
+
+    .nav-grid 
+    {
+        font-size:1.5rem;
+        cursor: pointer;
+        margin-right:1.2rem;
+        margin-left:0.5rem;
+        display:grid;
+        place-items:center;
+    }
+
+    .nav__profile
+    {
+        width:2rem;
+        height:2rem;
+        background-color: #c2185b;
+        color:white;
+        border-radius:50%;  
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+
+
+    /* Search  */
+
+    .search__container
+    {
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        margin-top:4rem;
+    }
+
+    .search__form
+    {
+        position: relative;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+    .search-icon 
+    {
+        position:absolute;
+        top:40%;
+        left:30px;
+        transform: translateX(-50%);
+        font-size:1.5rem;
+
+    }
+
+    .search__input 
+    {
+        width:600px;
+        padding:0.8rem 3rem;
+        border-radius:1.5rem;
+        outline:none;
+        border:1px solid rgba(00, 00, 00,0.2);
+        margin-bottom:2rem;
+        margin-top:2rem;
+    }
+
+    .search__input::placeholder 
+    {
+        font-size:1.2rem;
+    }
+
+    button 
+    {
+        border:none;
+        padding:0.8rem 1rem;
+        background-color: var(--gray-color);
+        margin-right:0.2rem;
+        margin-left:0.2rem;
+    }
+
